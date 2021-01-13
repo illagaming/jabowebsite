@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jabo</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>	
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top navbar">	
+	  <div class="container">
+	    <a class="navbar-brand" href="index.html">
+	        <img src="img/Blanc_petit.png" id="image" alt="">
+	    </a>	    
+	    <div class="collapse navbar-collapse">
+	      <ul class="navbar-nav ml-auto">
+	        <li class="nav-item active marg">
+	          <a class="nav-link" href="punaise.html">Punaise de Lit</a>
+	        </li>
+	        <li class="nav-item marg">
+	          <a class="nav-link" href="guepe.html">Guêpes et Frelons</a>
+	        </li>
+	        <li class="nav-item marg">
+	          <a class="nav-link" href="chenille.html">Chenilles Processionnaires</a>
+	        </li>
+	        <li class="nav-item marg">
+	          <a class="nav-link" href="tarifs.html">Tarifs</a>
+	        </li>
+	        <li class="nav-item marg">
+	          <a class="nav-link" href="contact.html">Contact</a>
+	        </li>
+	      </ul>	      
+	    </div>
+	  </div>
+	</nav>
+
+	<div style="color:white;">	
+		<div class="container text-center"><h1 class="space4">Contact</h1></div>
+		<div class="container border">			
+			<h3 style="padding-top: 20px;">COORDONNÉES</h3>	
+			<div class="barre"></div>	
+			<div class="space">
+				Numéro de téléphone : 
+				<a href="tel:0699206433" class="border space10" style="color: white;"> 06 99 20 64 33 </a></br>				
+			</div>
+		</div>	
+		<div class="container border">
+			<h3 style="padding-top: 20px;"> FORMULAIRE </h3>
+			<div class="barre"></div></br>			
+			<h3 style="text-align: center" class="space">
+				Veuillez renseigner ici vos coordonnées pour que nous puissions vous contacter
+			</h3>	
+		<form method="POST" action="mailto:contact@jabo.fr" enctype="text/plain">
+			<div class="container">
+				<div class="row space4">
+					<div class="col-2 space4">
+						<label for="nom">Nom* : </label>
+					</div>			
+					<div class="col-3 space4">
+						<input type="text" name="nom" placeholder="Dupont" required> </br>
+					</div>
+				</div>
+				<div class="row space4">
+					<div class="col-2 space4">
+						<label for="prenom">Prénom* : </label>
+					</div>
+					<div class="col-3 space4">
+						<input type="text" name="prenom" placeholder="Jean" required> </br>
+					</div>
+				</div>
+				<div class="row space4">
+					<div class="col-2 space4">
+						<label for="email">Email* : </label>
+					</div>
+					<div class="col-3 space4">
+						<input type="email" name="email" placeholder="ex : xx@email.com" required> </br>
+					</div>
+				</div>
+				<div class="row space4">
+					<div class="col-2 space4">
+						<label for="tel">Téléphone* : </label>
+					</div>
+					<div class="col-3 space4">
+						<input type="tel" name="tel" placeholder="ex : 0656******" required></br>
+					</div>
+				</div>
+				<div class="row space4">
+					<div class="col-2 space4">
+						<label for="message">Message: <span class="required">*</span></label>
+					</div>
+					<div class="col-3 space4">
+						<textarea cols="50" rows="6" id="message" name="message" placeholder="Votre message doit faire plus de 20 caractères..." required="required" data-minlength="20"></textarea>	
+					</div>						
+				</div>			
+				<button type="submit" id="button1" class="btn btn-outline-light boutton">Envoyer</button>	
+			<div class="row" id="espace">
+					<em>(* = champs obligatoires)</em>				
+			</div>
+		</div>
+		</div>
+		</form>			
+		<div class="container border">
+			<h3 style="padding-top: 20px;">PLAN D'ACCÈS</h3>
+			<div class="barre"></div>
+			</br>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10586.582583311272!2d1.5023798!3d48.4441404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e40db7829747c7%3A0x2de58acea0ce9dde!2sLyc%C3%A9e%20Fulbert!5e0!3m2!1sfr!2sfr!4v1609835666376!5m2!1sfr!2sfr" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>			
+		</div>
+	</div>
+
+
+</body>
+</html>
